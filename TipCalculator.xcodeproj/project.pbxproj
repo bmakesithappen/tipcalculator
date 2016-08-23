@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		DE82E6091D6CA8E7000ECA6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE82E6081D6CA8E7000ECA6D /* main.m */; };
 		DE82E60C1D6CA8E7000ECA6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE82E60B1D6CA8E7000ECA6D /* AppDelegate.m */; };
-		DE82E60F1D6CA8E7000ECA6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE82E60E1D6CA8E7000ECA6D /* ViewController.m */; };
+		DE82E60F1D6CA8E7000ECA6D /* TipCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE82E60E1D6CA8E7000ECA6D /* TipCalculatorViewController.m */; };
 		DE82E6121D6CA8E7000ECA6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE82E6101D6CA8E7000ECA6D /* Main.storyboard */; };
 		DE82E6141D6CA8E7000ECA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE82E6131D6CA8E7000ECA6D /* Assets.xcassets */; };
 		DE82E6171D6CA8E7000ECA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE82E6151D6CA8E7000ECA6D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE82E6041D6CA8E7000ECA6D /* TippingCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TippingCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE82E6041D6CA8E7000ECA6D /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE82E6081D6CA8E7000ECA6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE82E60A1D6CA8E7000ECA6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE82E60B1D6CA8E7000ECA6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DE82E60D1D6CA8E7000ECA6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DE82E60E1D6CA8E7000ECA6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE82E60D1D6CA8E7000ECA6D /* TipCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalculatorViewController.h; sourceTree = "<group>"; };
+		DE82E60E1D6CA8E7000ECA6D /* TipCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorViewController.m; sourceTree = "<group>"; };
 		DE82E6111D6CA8E7000ECA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE82E6131D6CA8E7000ECA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE82E6161D6CA8E7000ECA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		DE82E6051D6CA8E7000ECA6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE82E6041D6CA8E7000ECA6D /* TippingCalculator.app */,
+				DE82E6041D6CA8E7000ECA6D /* TipCalculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +60,8 @@
 			children = (
 				DE82E60A1D6CA8E7000ECA6D /* AppDelegate.h */,
 				DE82E60B1D6CA8E7000ECA6D /* AppDelegate.m */,
-				DE82E60D1D6CA8E7000ECA6D /* ViewController.h */,
-				DE82E60E1D6CA8E7000ECA6D /* ViewController.m */,
+				DE82E60D1D6CA8E7000ECA6D /* TipCalculatorViewController.h */,
+				DE82E60E1D6CA8E7000ECA6D /* TipCalculatorViewController.m */,
 				DE82E6101D6CA8E7000ECA6D /* Main.storyboard */,
 				DE82E6131D6CA8E7000ECA6D /* Assets.xcassets */,
 				DE82E6151D6CA8E7000ECA6D /* LaunchScreen.storyboard */,
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE82E6031D6CA8E7000ECA6D /* TippingCalculator */ = {
+		DE82E6031D6CA8E7000ECA6D /* TipCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE82E61B1D6CA8E7000ECA6D /* Build configuration list for PBXNativeTarget "TippingCalculator" */;
+			buildConfigurationList = DE82E61B1D6CA8E7000ECA6D /* Build configuration list for PBXNativeTarget "TipCalculator" */;
 			buildPhases = (
 				DE82E6001D6CA8E7000ECA6D /* Sources */,
 				DE82E6011D6CA8E7000ECA6D /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = TippingCalculator;
+			name = TipCalculator;
 			productName = TippingCalculator;
-			productReference = DE82E6041D6CA8E7000ECA6D /* TippingCalculator.app */;
+			productReference = DE82E6041D6CA8E7000ECA6D /* TipCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE82E5FF1D6CA8E7000ECA6D /* Build configuration list for PBXProject "TippingCalculator" */;
+			buildConfigurationList = DE82E5FF1D6CA8E7000ECA6D /* Build configuration list for PBXProject "TipCalculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE82E6031D6CA8E7000ECA6D /* TippingCalculator */,
+				DE82E6031D6CA8E7000ECA6D /* TipCalculator */,
 			);
 		};
 /* End PBXProject section */
@@ -149,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE82E60F1D6CA8E7000ECA6D /* ViewController.m in Sources */,
+				DE82E60F1D6CA8E7000ECA6D /* TipCalculatorViewController.m in Sources */,
 				DE82E60C1D6CA8E7000ECA6D /* AppDelegate.m in Sources */,
 				DE82E6091D6CA8E7000ECA6D /* main.m in Sources */,
 			);
@@ -264,7 +264,7 @@
 				INFOPLIST_FILE = TippingCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etsy.TippingCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TipCalculator;
 			};
 			name = Debug;
 		};
@@ -275,14 +275,14 @@
 				INFOPLIST_FILE = TippingCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etsy.TippingCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TipCalculator;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE82E5FF1D6CA8E7000ECA6D /* Build configuration list for PBXProject "TippingCalculator" */ = {
+		DE82E5FF1D6CA8E7000ECA6D /* Build configuration list for PBXProject "TipCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE82E6191D6CA8E7000ECA6D /* Debug */,
@@ -291,13 +291,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE82E61B1D6CA8E7000ECA6D /* Build configuration list for PBXNativeTarget "TippingCalculator" */ = {
+		DE82E61B1D6CA8E7000ECA6D /* Build configuration list for PBXNativeTarget "TipCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE82E61C1D6CA8E7000ECA6D /* Debug */,
 				DE82E61D1D6CA8E7000ECA6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

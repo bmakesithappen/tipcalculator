@@ -6,22 +6,17 @@
 //  Copyright © 2016 Bernard Desert. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TipCalculatorViewController.h"
 
-@interface ViewController ()
+@interface TipCalculatorViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TipCalculatorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
