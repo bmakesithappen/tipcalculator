@@ -10,6 +10,5 @@
 
 @interface TipCalculatorViewController : UIViewController
 
-
 @end
 
