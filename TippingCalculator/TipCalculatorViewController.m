@@ -8,7 +8,7 @@
 
 #import "TipCalculatorViewController.h"
 
-static CGFloat const ButtonDiameter = 80; // Global Naming?? Why
+// static CGFloat const ButtonDiameter = 80; // Global Naming?? Why
 
 @interface TipCalculatorViewController ()
 
@@ -26,9 +26,16 @@ static CGFloat const ButtonDiameter = 80; // Global Naming?? Why
 
 #pragma ViewLifeCylce
 
+// why is not showing
+// find a UIKit cancel / clear fields button
+// are the self.titles right
+// adding title for Navigation " Tip Calculator "
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+ //   self.navigationItem.titleView =
     
     self.totalAmountLabel = [UILabel new];
     self.title = @"TotalAmount";
@@ -37,12 +44,13 @@ static CGFloat const ButtonDiameter = 80; // Global Naming?? Why
     self.totalAmountTextField.keyboardType = UIKeyboardTypeDecimalPad;
     [self.view addSubview:self.totalAmountTipTextField];
     
+    // adjust CGRectMake
     
     self.totalAmountTipLabel = [UILabel new];
     self.title = @"TotalTipAmount";
-    self.totalAmountTipLabel.frame = CGRectMake(20, 40, self.view.bounds.size.width - 40, // width
-                                             60); // height
-    self.totalAmountTipTextField.keyboardType = UIKeyboardTypeDecimalPad; // this should change to a
+    self.totalAmountTipLabel.frame = CGRectMake(20, 40, self.view.bounds.size.width - 80, // width
+                                             120); // height
+    self.totalAmountTipTextField.keyboardType = UIKeyboardTypeDecimalPad; // this should change to just display numbers
     [self.view addSubview:self.totalAmountTipTextField];
     
 
@@ -61,8 +69,7 @@ static CGFloat const ButtonDiameter = 80; // Global Naming?? Why
     
 # pragma Actions 
     
-    // use to save numbers pressed
-    // define tipcalculated 
+    // define tipcalculated
     
 }
 
