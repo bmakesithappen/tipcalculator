@@ -26,38 +26,42 @@
 
 #pragma ViewLifeCylce
 
-// why is not showing
-// find a UIKit cancel / clear fields button
-// are the self.titles right
-// adding title for Navigation " Tip Calculator "
-
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
- //   self.navigationItem.titleView =
-    
-    self.totalAmountLabel = [UILabel new];
-    self.title = @"TotalAmount";
-    self.totalAmountLabel.frame = CGRectMake(20, 40, self.view.bounds.size.width - 40, // width
-                                        60); // height
-    self.totalAmountTextField.keyboardType = UIKeyboardTypeDecimalPad;
-    [self.view addSubview:self.totalAmountTipTextField];
-    
-    // adjust CGRectMake
-    
-    self.totalAmountTipLabel = [UILabel new];
-    self.title = @"TotalTipAmount";
-    self.totalAmountTipLabel.frame = CGRectMake(20, 40, self.view.bounds.size.width - 80, // width
-                                             120); // height
-    self.totalAmountTipTextField.keyboardType = UIKeyboardTypeDecimalPad; // this should change to just display numbers
-    [self.view addSubview:self.totalAmountTipTextField];
-    
+    self.title = @"Tip Calculator";
+    self.view.backgroundColor = [UIColor whiteColor];
 
     
-/*   Change to be a cancel clear values button
+    self.totalAmountLabel = [UILabel new];
+    self.totalAmountLabel.text = @"TotalAmount";
+    self.totalAmountLabel.frame = CGRectMake(20, 40, self.view.bounds.size.width - 40,
+                                        60);
+    [self.view addSubview:self.totalAmountLabel];
+
+    self.totalAmountTextField = [UITextField new];
+    self.totalAmountTextField.frame = CGRectMake(20, 60, self.view.bounds.size.width - 40, 60);
+    self.totalAmountTextField.keyboardType = UIKeyboardTypeDecimalPad;
+    self.totalAmountTextField.placeholder = @"0.00";
+ //   [self.totalAmountTextField addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:self.totalAmountTextField];
+    
  
- self.navigationItem.leftBarButtonItem
+    self.totalAmountTipLabel = [UILabel new];
+    self.totalAmountTipLabel.text = @"TotalTipAmount";
+    self.totalAmountTipLabel.frame = CGRectMake(20, 80, self.view.bounds.size.width - 40,
+                                             60);
+    [self.view addSubview:self.totalAmountTipLabel];
+
+    self.totalAmountTipTextField = [UITextField new];
+    self.totalAmountTipTextField.frame = CGRectMake(20, 100, self.view.bounds.size.width - 40,  60);
+    self.totalAmountTipTextField.keyboardType = UIKeyboardTypeDecimalPad; // this should change to just display numbers
+    self.totalAmountTextField.placeholder = @"0.00";
+    [self.view addSubview:self.totalAmountTipTextField];
+    
+    self.navigationItem.leftBarButtonItem
     = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                     target:self
                                                     action:@selector
@@ -65,11 +69,17 @@
     
     self.navigationItem.leftBarButtonItem.accessibilityLabel = @"cancel button";
 
- */
     
-# pragma Actions 
+# pragma Actions
+
+    double totalWithoutTip = self.totalAmountTipTextField.text.doubleValue;
     
-    // define tipcalculated
+    self.totalAmountTipTextField.text = [NSString stringWithFormat:@"%0.2f",totalWithoutTip];
+}
+
+
+- (void)cancelButtonWasTapped:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
