@@ -17,7 +17,6 @@
 @property (nonatomic,strong) UITextField *totalAmountTextField;
 @property (nonatomic,strong) UILabel *totalAmountTipLabel;
 @property (nonatomic,strong) UITextField *totalAmountTipTextField;
-@property (nonatomic,strong) NSString *totalAmountTextDidChange;
 
 @end
 
@@ -46,9 +45,8 @@
     self.totalAmountTextField.frame = CGRectMake(20, 60, self.view.bounds.size.width - 40, 60);
     self.totalAmountTextField.keyboardType = UIKeyboardTypeDecimalPad;
     self.totalAmountTextField.placeholder = @"0.00";
-    self.totalAmountTextDidChange = [NSString new];
     [self.totalAmountTextField addTarget:self action:@selector(totalAmountTextDidChange) forControlEvents:UIControlEventEditingChanged];
-    NSLog(@"text",_totalAmountTextDidChange);
+ //   NSLog(@"text",_totalAmountTextDidChange);
     [self.view addSubview:self.totalAmountTextField];
     
  
@@ -84,6 +82,12 @@
 - (void)cancelButtonWasTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
     
+}
+
+/// instance method needed for UIController
+
+- (void)totallAmountTextDidChange:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
