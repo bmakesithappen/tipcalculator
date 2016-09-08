@@ -17,6 +17,7 @@
 @property (nonatomic,strong) UITextField *totalAmountTextField;
 @property (nonatomic,strong) UILabel *totalAmountTipLabel;
 @property (nonatomic,strong) UITextField *totalAmountTipTextField;
+@property (nonatomic,strong) NSString *totalAmountTextDidChange;
 
 @end
 
@@ -45,7 +46,9 @@
     self.totalAmountTextField.frame = CGRectMake(20, 60, self.view.bounds.size.width - 40, 60);
     self.totalAmountTextField.keyboardType = UIKeyboardTypeDecimalPad;
     self.totalAmountTextField.placeholder = @"0.00";
- //   [self.totalAmountTextField addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:UIControlEventValueChanged];
+    self.totalAmountTextDidChange = [NSString new];
+    [self.totalAmountTextField addTarget:self action:@selector(totalAmountTextDidChange) forControlEvents:UIControlEventEditingChanged];
+    NSLog(@"text",_totalAmountTextDidChange);
     [self.view addSubview:self.totalAmountTextField];
     
  
