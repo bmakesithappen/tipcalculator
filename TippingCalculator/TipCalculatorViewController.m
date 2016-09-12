@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+   // [self totalAmountTextDidChange:@""];
     
     self.title = @"Tip Calculator";
     self.view.backgroundColor = [UIColor whiteColor];
@@ -45,9 +46,9 @@
     self.totalAmountTextField.frame = CGRectMake(20, 60, self.view.bounds.size.width - 40, 60);
     self.totalAmountTextField.keyboardType = UIKeyboardTypeDecimalPad;
     self.totalAmountTextField.placeholder = @"0.00";
-    [self.totalAmountTextField addTarget:self action:@selector(totalAmountTextDidChange:) forControlEvents:UIControlEventEditingChanged];
- // NSLog method needs to change
- //   NSLog(@"text",_totalAmountTextDidChange);
+    [self.totalAmountTextField addTarget:self
+                                  action:@selector(totalAmountTextDidChange:)
+                        forControlEvents:UIControlEventEditingChanged];
     [self.view addSubview:self.totalAmountTextField];
     
  
@@ -72,22 +73,26 @@
     self.navigationItem.leftBarButtonItem.accessibilityLabel = @"cancel button";
 
     
-# pragma Actions
-
     double totalWithoutTip = self.totalAmountTipTextField.text.doubleValue;
     
     self.totalAmountTipTextField.text = [NSString stringWithFormat:@"%0.2f",totalWithoutTip];
 }
 
+
+# pragma Actions // usually instance methods
+
 - (void)cancelButtonWasTapped:(id)sender {
-   [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
-/// instance method needed for UIController this is not right
+- (void)totalAmountTextDidChange:(id)sender {
+    int x = 5;
+    NSLog(@"Textfield (%@) changed to %@. Number 5: %d",
+          self.totalAmountTextField,
+          self.totalAmountTextField.text,
+          x);
 
-- (void)totalAmountTextDidChange:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
